@@ -5,7 +5,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const SideBar = () => {
   const [popularBlogs, setPopularBlogs] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/blogs")
+    fetch("https://blogbackend-bwxv.onrender.com/blogs")
       .then((response) => response.json())
       .then((data) => setPopularBlogs(data.slice(0, 15)));
   }, []);
