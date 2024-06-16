@@ -43,7 +43,7 @@ const router = createBrowserRouter([
         path: "/blogs/:id",
         element: <SingleBlog />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/blogs/${params.id}`),
+          fetch(`https://blogbackend-bwxv.onrender.com/blogs/${params.id}`),
       },
     ],
   },
