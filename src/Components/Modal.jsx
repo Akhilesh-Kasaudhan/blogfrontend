@@ -37,7 +37,10 @@ const Modal = ({ isOpen, onClose }) => {
               />
             </div>
             <div>
-              <button className="bg-[#fca311] text-[#e5e5e5] px-8 py-2 rounded cursor-pointer hover:bg-[#e5e5e5] hover:text-[#fca311] mt-4 ">
+              <button
+                onClick={onClose}
+                className="bg-[#fca311] text-[#e5e5e5] px-8 py-2 rounded cursor-pointer hover:bg-[#e5e5e5] hover:text-[#fca311] mt-4 "
+              >
                 Login
               </button>
             </div>
