@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+ *{ 
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+html,body{
+width:100%;
+height:100%;
+}
+
+
+.active{
+  @apply text-[#fca311] underline 
+}
+@media  screen and (max-width:400px) {
+
+  .active{
+  @apply text-[#14213d] underline 
+}
+}
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0 ;
+  padding: 0;
+}
+.pagination li {
+  margin: 0 5px;
+
+}
+.pagination a{
+  display: inline-block;
+  padding: 5px 12px;
+  border: 1px solid #ccc;
+   border-radius: 4px;
+   text-decoration: none;
+   color: #fff;
+}
+.pagination a:hover{
+  background: rgb(165,180,252);
+}
+.pagination li.activePagination{
+  background: rgb(165,180,252);
+  border-radius: 4px;
+  color:#fff;
+}
+.active-button{
+  color: #faf0ca;
+}
